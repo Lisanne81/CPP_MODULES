@@ -6,7 +6,7 @@
 /*   By: lhoukes <lhoukes@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/24 14:00:59 by lhoukes       #+#    #+#                 */
-/*   Updated: 2023/03/25 15:50:29 by lhoukes       ########   odam.nl         */
+/*   Updated: 2023/03/25 16:25:50 by lhoukes       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	main(void)
 	std::cout << b << std::endl;
 	std::cout << Fixed::max( a, b ) << std::endl;
 
-	//extra tests
+	//extra tests -> created by merel van der wal --mevan-de--
 	std::cout << std::endl;
 	std::cout << "EXTRA:" << std::endl;
 

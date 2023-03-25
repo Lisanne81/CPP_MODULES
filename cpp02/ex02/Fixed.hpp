@@ -6,7 +6,7 @@
 /*   By: lhoukes <lhoukes@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/24 13:58:30 by lhoukes       #+#    #+#                 */
-/*   Updated: 2023/03/25 15:47:47 by lhoukes       ########   odam.nl         */
+/*   Updated: 2023/03/25 16:23:24 by lhoukes       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,17 @@ public:
 	int		toInt(void) const;
 	int		getRawBits(void) const;
 	void	setRawBits(int const raw);
+	
+	Fixed	operator+(Fixed const &rhs);
+	Fixed	operator-(Fixed const &rhs);
+	Fixed	operator*(Fixed const &rhs);
+	Fixed	operator/(Fixed const &rhs);
 
-	//ex02
-	//comparision operators
+	Fixed	operator++(void);
+	Fixed	operator++(int);
+	Fixed	operator--(void);
+	Fixed	operator--(int);
+
 	bool	operator>(Fixed const &rhs) const;
 	bool	operator<(Fixed const &rhs) const;
 	bool	operator>=(Fixed const &rhs) const;
@@ -71,20 +79,6 @@ public:
 	bool	operator==(Fixed const &rhs) const;
 	bool	operator!=(Fixed const &rhs) const;
 
-	//arithmetic operators:
-	Fixed	operator+(Fixed const &rhs);
-	Fixed	operator-(Fixed const &rhs);
-	Fixed	operator*(Fixed const &rhs);
-	Fixed	operator/(Fixed const &rhs);
-
-	//increment operators:
-	//https://www.programiz.com/cpp-programming/increment-decrement-operator-overloading
-	Fixed	operator++(void);
-	Fixed	operator++(int);
-	Fixed	operator--(void);
-	Fixed	operator--(int);
-
-	//min max funtions:
 	static Fixed&	min(Fixed& a, Fixed& b);
 	static Fixed&	max(Fixed& a, Fixed& b);
 	const static Fixed&	min(const Fixed& a, const Fixed& b);
