@@ -1,0 +1,30 @@
+/*
+	In C++, both copy constructor and copy assignment 
+	operator are used for creating copies of an existing object. 
+	However, they have different purposes and behaviors:
+
+	Copy constructor: 
+	A copy constructor is a special constructor 
+	that initializes a new object using an existing object of the same class. 
+	It is used when an object is created from an existing object, 
+	either by direct initialization, function parameter passing by value, 
+	or by returning an object by value. The copy constructor takes a reference 
+	to an object of the same class as an argument, and creates a new object 
+	with the same state as the original object.
+
+	Copy assignment operator: 
+	The copy assignment operator is an overloaded operator that is used to assign 
+	the contents of one object to another object of the same class. 
+	It is used when an object is assigned to another object using 
+	the assignment operator (=). The copy assignment operator takes a reference 
+	to an object of the same class as an argument, and copies the state of 
+	the original object to the new object.
+
+	While both copy constructor and copy assignment operator create copies of an object, 
+	they differ in how they are called and when they are used. 
+	The copy constructor is used when a new object is created from an existing object, 
+	while the copy assignment operator is used when an existing object 
+	is assigned to another existing object. In addition, the copy constructor is called 
+	only once during the creation of a new object, while the copy assignment operator 
+	may be called multiple times during the lifetime of an object.
+*/

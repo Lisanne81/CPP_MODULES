@@ -1,0 +1,30 @@
+
+--Write: An overload of the insertion («) operator that inserts a floating-point representation
+--of the fixed-point number into the output stream object passed as parameter.
+
+This is a declaration of the insertion operator (<<) for a class called Fixed, 
+which is designed to represent fixed-point numbers. 
+The operator overloads the standard output stream (std::ostream) 
+to allow instances of the Fixed class to be outputted to the console or a file.
+
+The declaration specifies two parameters:
+
+The first parameter is a reference to an output stream (std::ostream& out), 
+which represents the stream to which the output is being sent.
+The second parameter is a reference to a constant Fixed object (const Fixed& fixed), 
+which represents the Fixed object being outputted.
+The operator returns a reference to the output stream (std::ostream&), 
+which allows for chaining of multiple insertion operators to output multiple objects in a single statement.
+
+The definition of the << operator would typically be defined outside of the class definition, 
+like this:
+
+std::ostream& operator<<(std::ostream& out, const Fixed& fixed) {
+    // code to output the Fixed object to the output stream goes here
+    return out;
+}
+The actual code inside the function will depend on how the Fixed class is implemented 
+and how the fixed-point number is represented internally. 
+The goal is to format the output in a way that makes sense for 
+the fixed-point number being represented, and to output the result to 
+the specified output stream.
