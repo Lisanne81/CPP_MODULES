@@ -1,10 +1,10 @@
-NAME		=	animal
+NAME		=	bureaucrat01
 CC			=	c++
 FLAGS		=	-Wall -Wextra -Werror -std=c++98
 RM			=	rm -f
 
-SRC			=	main.cpp Cat.cpp Dog.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp
-HDR			=	include/*.hpp
+SRC			=	main.cpp Bureaucrat.cpp Form.cpp
+HDR			=	includes/ *.hpp
 OBJ			= 	$(SRC:%.cpp=%.o)
 LIBS		=	-o
 
@@ -28,7 +28,7 @@ start:
 
 clean:
 		@$(RM) $(OBJ)
-		@echo "\033[38;5;140mNow you know the truth about 😼 & 🐶!\033[0m"
+		@echo "\033[38;5;140mBureaucracy at its best 👨🏼‍💼 📝!\033[0m"
 
 fclean: clean
 		@$(RM) $(NAME)
